@@ -1,0 +1,113 @@
+﻿.collapsible
+{
+  background-color: #778; /* background color */
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover
+{
+  background-color: #555;
+}
+
+.collapsible:after
+{
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after
+{
+  content: "\2212";
+}
+
+.content
+{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.head1
+{
+    text-align: center;
+	font-size: 35px;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.head2
+{
+	font-size: 30px;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+}
+/* header */
+header
+{
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* Container for flexboxes */
+section
+{
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* navigation menu */
+nav
+{
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background: #2a2d33;
+	padding: 20px;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+/* list inside the menu */
+nav ul
+{
+  list-style-type: none;
+  padding: 1,0,0,0;
+}
+a:link
+{
+  text-decoration: none;
+  color: white;
+}
+a:hover, a:active
+{
+  background-color: #555;
+}
+a:visited
+{
+  color: gray;
+}
+
+/* content */
+article
+{
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
