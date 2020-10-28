@@ -1,109 +1,240 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="helpGuideStyle.css">
-</head>
-<body>
-
-<h2 class="head1">Help Guide</h2>
-<section>
-  <nav>
-  <p>Desktop</p>
-    <ul>
-      <li><a href="#DesktopLoggingIn" onclick="openContent()">Logging in</a></li>
-      <li><a href="#DesktopApps" onclick="openContent()">Apps</a></li>
-      <li><a href="#DesktopBookmarks" onclick="openContent()">Bookmarks</a></li>
-      <li><a href="#DesktopAddToFavorites" onclick="openContent()">Add to Favorites</a></li>
-      <li><a href="#DesktopSettings" onclick="openContent()">Settings</a></li>
-      <li><a href="#DesktopAnalyzeInExcel" onclick="openContent()">Analyze in Excel</a></li>
-    </ul>
-    <p>Mobile</p>
-    <ul>
-      <li><a href="#MobileLoggingIn" onclick="openContent()">Logging in</a></li>
-      <li><a href="#MobileApps" onclick="openContent()">Apps</a></li>
-      <li><a href="#MobileBookmarks" onclick="openContent()">Bookmarks</a></li>
-      <li><a href="#MobileAddToFavorites" onclick="openContent()">Add to Favorites</a></li>
-      <li><a href="#MobileSettings" onclick="openContent()">Settings</a></li>
-      <li><a href="#MobileNavigation" onclick="openContent()">Navigation</a></li>
-      <li><a href="#MobileStaticAcrossAllPages" onclick="openContent()">Static across all pages</a></li>
-      <li><a href="#MobileHomeQuickAccess" onclick="openContent()">Home - Quick Access</a></li>
-      <li><a href="#MobileHomeActivity" onclick="openContent()">Home - Activity</a></li>
-      <li><a href="#MobilePages" onclick="openContent()">Pages</a></li>
-    </ul>
-  </nav>
-  
-<article>  
-<p class="head2">Desktop</p>
-<button class="collapsible">Logging in</button>
-<div id="DesktopLoggingIn"class="content">
-  <p>Logging in content</p>
-</div>
-<button class="collapsible">Apps</button>
-<div id="DesktopApps" class="content">
-  <p>Apps content</p>
-</div>
-<button class="collapsible">Bookmarks</button>
-<div id="DesktopBookmarks" class="content">
-  <p>Bookmarks content</p>
-</div>
-<button class="collapsible">Add to Favorites</button>
-<div id="DesktopAddToFavorites" class="content">
-  <p>Add to Favorites content</p>
-</div>
-<button class="collapsible">Settings</button>
-<div id="DesktopSettings" class="content">
-  <p>Settings content</p>
-</div>
-<button class="collapsible">Analyze in Excel</button>
-<div id="DesktopAnalyzeInExcel" class="content">
-  <p>Analyze in Excel content</p>
-</div>
-<p class="head2">Mobile</p>
-<button class="collapsible">Logging in</button>
-<div id="MobileLoggingIn" class="content">
-  <p>Logging in content</p>
-</div>
-<button class="collapsible">Apps</button>
-<div id="MobileApps" class="content">
-  <p>Apps content</p>
-</div>
-<button class="collapsible">Bookmarks</button>
-<div id="MobileBookmarks" class="content">
-  <p>Bookmarks content</p>
-</div>
-<button class="collapsible">Add to Favorites</button>
-<div id="MobileAddToFavorites" class="content">
-  <p>Add to Favorites content</p>
-</div>
-<button class="collapsible">Settings</button>
-<div id="MobileSettings" class="content">
-  <p>Settings content</p>
-</div>
-<button class="collapsible">Navigation</button>
-<div id="MobileNavigation" class="content">
-  <p>Navigation content</p>
-</div>
-<button class="collapsible">Static across all pages</button>
-<div id="MobileStaticAcrossAllPages" class="content">
-  <p>Static across all pages content</p>
-</div>
-<button class="collapsible">Home - Quick Access</button>
-<div id="MobileHomeQuickAccess" class="content">
-  <p>Home - Quick Access content</p>
-</div>
-<button class="collapsible">Home - Activity</button>
-<div id="MobileHomeActivity" class="content">
-  <p>Home - Activity content</p>
-</div>
-<button class="collapsible">Pages</button>
-<div id="MobilePages" class="content">
-  <p>Pages content</p>
-</div>
-</article>
-</section>
-
-<script src="helpGuideScript.js"></script>
-
-</body>
-</html>
+	<head>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+			<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+				<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+				<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+				<link rel = "stylesheet" href = "helpGuideStyle.css">
+				</head>
+				<body>
+					<h1>Help Guide</h1>
+					<section>
+						<nav>
+							<p>Desktop</p>
+							<ul>
+								<li>
+									<a data-toggle = "collapse" href = "#DesktopLoggingIn">Logging in</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#DesktopApps">Apps</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#DesktopBookmarks">Bookmarks</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#DesktopAddToFavorites">Add to Favorites</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#DesktopSettings">Settings</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#DesktopAnalyzeInExcel">Analyze in Excel</a>
+								</li>
+							</ul>
+							<p>Mobile</p>
+							<ul>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileLoggingIn">Logging in</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileApps">Apps</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileBookmarks">Bookmarks</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileAddToFavorites">Add to Favorites</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileSettings">Settings</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileNavigation">Navigation</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileStaticAcrossAllPages">Static across all pages</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileHomeQuickAccess">Home - Quick Access</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobileHomeActivity">Home - Activity</a>
+								</li>
+								<li>
+									<a data-toggle = "collapse" href = "#MobilePages">Pages</a>
+								</li>
+							</ul>
+						</nav>
+						<article>
+							<div class = "container">
+								<h2>Desktop</h2>
+								<div id = "accordion">
+									<div class = "card">
+										<div class ="card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#DesktopLoggingIn">Logging in</a>
+										</div>
+										<div id = "DesktopLoggingIn" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Logging in content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#DesktopApps">Apps</a>
+										</div>
+										<div id = "DesktopApps" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Apps content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#DesktopBookmarks">Bookmarks</a>
+										</div>
+										<div id = "DesktopBookmarks" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Bookmarks content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#DesktopAddToFavorites">Add to Favorites</a>
+										</div>
+										<div id = "DesktopAddToFavorites" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Add to Favorites content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#DesktopSettings">Settings</a>
+										</div>
+										<div id = "DesktopSettings" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Settings content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#DesktopAnalyzeInExcel">Analyze in Excel</a>
+										</div>
+										<div id = "DesktopAnalyzeInExcel" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Analyze in Excel content
+											</div>
+										</div>
+									</div>
+									<h2>Mobile</h2>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileLoggingIn">Logging in</a>
+										</div>
+										<div id = "MobileLoggingIn" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Logging in content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileApps">Apps</a>
+										</div>
+										<div id = "MobileApps" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Apps content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileBookmarks">Bookmarks</a>
+										</div>
+										<div id = "MobileBookmarks" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Bookmarks content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileAddToFavorites">Add to Favorites</a>
+										</div>
+										<div id = "MobileAddToFavorites" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Add to Favorites content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileSettings">Settings</a>
+										</div>
+										<div id = "MobileSettings" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Settings content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileNavigation">Navigation</a>
+										</div>
+										<div id = "MobileNavigation" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Navigation content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileStaticAcrossAllPages">Static across all pages</a>
+										</div>
+										<div id = "MobileStaticAcrossAllPages" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Static across all pages content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileHomeQuickAccess">Home - Quick Access</a>
+										</div>
+										<div id = "MobileHomeQuickAccess" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Home - Quick Access content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobileHomeActivity">Home - Activity</a>
+										</div>
+										<div id = "MobileHomeActivity" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Home - Activity content
+											</div>
+										</div>
+									</div>
+									<div class = "card">
+										<div class = "card-header">
+											<a class = "card-link" data-toggle = "collapse" href = "#MobilePages">Pages</a>
+										</div>
+										<div id = "MobilePages" class = "collapse" data-parent = "#accordion">
+											<div class = "card-body">
+Pages content
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</section>
+				</body>
+			</html>
